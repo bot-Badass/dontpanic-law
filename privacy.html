@@ -9,13 +9,13 @@ body{background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,
 <p>DontPanic HQ ("the app") is a private internal tool of the DontPanic Law channel. It runs only on the channel owner's own computer and is used solely by the channel owner to upload the channel's own videos to the channel's own YouTube account. The app is not offered to the public.</p>
 <h2>What data the app accesses</h2>
 <ul>
-<li>With the owner's consent via Google OAuth, the app requests the scopes <code>youtube.upload</code> (to upload videos and set their title, description, tags, thumbnail and scheduled publish time) and <code>youtube.readonly</code> (to confirm which channel the authorization belongs to and to read the channel's own public video statistics).</li>
+<li>With the owner's consent via Google OAuth, the app requests the scopes <code>youtube.upload</code> (to upload videos and set their title, description, tags, thumbnail and scheduled publish time) and <code>youtube.readonly</code> (to confirm which channel the authorization belongs to and to read the channel's own public video statistics), <code>yt-analytics.readonly</code> (to read the channel's own audience-retention and watch-time analytics) and <code>youtube.force-ssl</code> (to read and reply to comments on the channel's own videos).</li>
 <li>The app does not access any other Google data and does not collect personal data of viewers or any other users.</li>
 </ul>
 <h2>How data is stored and used</h2>
 <ul>
 <li>The OAuth refresh token is stored only on the owner's computer in a file readable only by the owner's user account. It is never sent to any server other than Google's.</li>
-<li>Data obtained through YouTube API Services is used only to publish the channel's own videos and to show the owner their own channel statistics. It is not sold, shared with third parties, or used for advertising.</li>
+<li>Data obtained through YouTube API Services is used only to publish the channel's own videos, to show the owner their own channel statistics, and to let the owner reply to comments on their own videos. Analytics data is stored locally and refreshed at least every 30 days; data older than that is deleted or refreshed, in line with the YouTube API Services Developer Policies. It is not sold, shared with third parties, or used for advertising.</li>
 </ul>
 <h2>Third-party terms</h2>
 <p>The app uses YouTube API Services. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
